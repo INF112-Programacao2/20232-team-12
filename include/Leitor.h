@@ -1,8 +1,8 @@
 #ifndef LEITOR_HPP
 #define LEITOR_HPP
 
-#include "../include/Usuario.hpp"
-#include "../include/Artigo.hpp"
+#include "../include/Usuario.h"
+#include "../include/Artigo.h"
 #include <iostream>
 #include <vector>
 

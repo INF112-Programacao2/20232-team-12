@@ -1,12 +1,10 @@
-#include "../include/Usuario.hpp"
-#include "../include/Administrador.hpp"
-#include "../include/Leitor.hpp"
-#include "../include/Autor.hpp"
-#include "../include/Comentario.hpp"
-#include "../include/Artigo.hpp"
-#include "../include/Anuncio.hpp"
-#include "../include/Tirinha.hpp"
-#include "../include/Texto.hpp"
+#include "../include/Administrador.h"
+#include "../include/Leitor.h"
+#include "../include/Autor.h"
+#include "../include/Comentario.h"
+#include "../include/Anuncio.h"
+#include "../include/Tirinha.h"
+#include "../include/Texto.h"
 
 #include <iostream>
 #include <sqlite3.h>

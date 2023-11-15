@@ -1,7 +1,7 @@
 #ifndef AUTOR_HPP
 #define AUTOR_HPP
 
-#include "../include/Usuario.hpp"
+#include "../include/Usuario.h"
 
 #include <iostream>
 #include <vector>

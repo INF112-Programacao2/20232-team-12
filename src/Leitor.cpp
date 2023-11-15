@@ -1,4 +1,4 @@
-#include "../include/Leitor.hpp"
+#include "../include/Leitor.h"
 #include <iostream>
 
 Leitor::Leitor(std::string nome, std::string email, bool assinatura_ativada, std::string data_inicial_contrato):

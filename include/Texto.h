@@ -1,7 +1,7 @@
 #ifndef TEXTO_HPP
 #define TEXTO_HPP
 
-#include "../include/Artigo.hpp"
+#include "../include/Artigo.h"
 
 #include <iostream>
 #include <vector>

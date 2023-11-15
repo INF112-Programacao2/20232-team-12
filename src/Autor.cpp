@@ -1,4 +1,4 @@
-#include "../include/Autor.hpp"
+#include "../include/Autor.h"
 #include <iostream>
 
 Autor::Autor(std::string nome, std::string email, std::string formacao, std::string area):

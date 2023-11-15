@@ -1,13 +1,13 @@
 #ifndef ARTIGO_HPP
 #define ARTIGO_HPP
 
-#include "../include/Autor.hpp"
+#include "../include/Autor.h"
 
 #include <iostream>
 #include <vector>
 
 class Artigo {
-    private: 
+    protected: 
     int _id;
     std::string _titulo;
     std::vector<Autor*>_autores;
@@ -21,7 +21,6 @@ class Artigo {
 
     int get_id();
     std::string get_titulo();
-    void get_autores();
     int get_data();
     std::string get_link();
 
@@ -30,6 +29,8 @@ class Artigo {
     void set_link(std::string link);
 
     void adicionar_autor(Autor *autor);
+    void ver_autores();
     void ver_artigos_por_autor(Autor *autor);
+    void salvar_no_banco_de_dados();
 };
 #endif

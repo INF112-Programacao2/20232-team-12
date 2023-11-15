@@ -4,7 +4,7 @@
 #include <iostream>
 
 class Usuario {
-    private: 
+    protected: 
     int _id;
     std::string _nome;
     std::string _email;
@@ -20,5 +20,7 @@ class Usuario {
     
     void set_nome(std::string nome);
     void set_email(std::string email);
+
+    virtual void salvar_no_banco_de_dados();
 };
 #endif

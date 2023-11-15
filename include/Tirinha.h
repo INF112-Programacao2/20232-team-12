@@ -1,7 +1,7 @@
 #ifndef TIRINHA_HPP
 #define TIRINHA_HPP
 
-#include "../include/Artigo.hpp"
+#include "../include/Artigo.h"
 #include <iostream>
 
 class Tirinha : public Artigo {

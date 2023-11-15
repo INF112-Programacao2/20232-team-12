@@ -1,4 +1,4 @@
-#include "../include/Administrador.hpp"
+#include "../include/Administrador.h"
 #include <iostream>
 
 Administrador::Administrador(std::string nome, std::string email, int senha):
@@ -8,9 +8,6 @@ Administrador::~Administrador(){
     std::cout << "Destruindo administrador..." << std::endl;
 }
 
-void Administrador::adicionar_artigo(){
-
-}
 void Administrador::remover_artigo(){
 
 }

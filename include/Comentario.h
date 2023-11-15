@@ -1,8 +1,8 @@
 #ifndef COMENTARIO_HPP
 #define COMENTARIO_HPP
 
-#include "../include/Leitor.hpp"
-#include "../include/Artigo.hpp"
+#include "../include/Leitor.h"
+#include "../include/Artigo.h"
 #include <iostream>
 #include <vector>
 

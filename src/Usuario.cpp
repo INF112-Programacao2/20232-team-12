@@ -1,4 +1,4 @@
-#include "../include/Usuario.hpp"
+#include "../include/Usuario.h"
 #include <iostream>
 
 int Usuario::_numero_de_usuarios = 0;
@@ -8,7 +8,7 @@ Usuario::Usuario(std::string nome, std::string email):
     _nome(nome),
     _email(email)
 {
-    Usuario::_numero_de_usuarios++;
+    _numero_de_usuarios++;
 }
 
 Usuario::~Usuario(){
@@ -33,5 +33,9 @@ void Usuario::set_nome(std::string nome){
 
 void Usuario::set_email(std::string email){
     _email = email;
+}
+
+void Usuario::salvar_no_banco_de_dados(){
+    
 }
 

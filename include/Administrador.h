@@ -1,7 +1,7 @@
 #ifndef ADMINISTRADOR_HPP
 #define ADMINISTRADOR_HPP
 
-#include "../include/Usuario.hpp"
+#include "../include/Usuario.h"
 #include <iostream>
 
 class Administrador : public Usuario {
@@ -12,7 +12,6 @@ class Administrador : public Usuario {
     Administrador(std::string nome, std::string email, int senha);
     ~Administrador();
     
-    void adicionar_artigo();
     void remover_artigo();
     void apagar_comentario();
 };

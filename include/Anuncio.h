@@ -1,7 +1,7 @@
 #ifndef ANUNCIO_HPP
 #define ANUNCIO_HPP
 
-#include "../include/Artigo.hpp"
+#include "../include/Artigo.h"
 
 #include <iostream>
 
