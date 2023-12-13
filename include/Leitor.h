@@ -1,8 +1,10 @@
-#ifndef LEITOR_HPP
-#define LEITOR_HPP
+#ifndef LEITOR_H
+#define LEITOR_H
 
 #include "../include/Usuario.h"
 #include "../include/Artigo.h"
+#include "../include/Comentario.h"
+
 #include <iostream>
 #include <vector>
 
@@ -25,7 +27,9 @@ class Leitor : public Usuario {
     
     void ver_jornal();
     void postar_comentario();
-    void adicionar_artigo_aos_favoritos(Artigo *artigo);
+    void favoritar_artigo();
     void remover_artigo_dos_favoritos();
+
+    virtual void salvar_no_banco() override;
 };
 #endif

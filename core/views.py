@@ -1,14 +1,20 @@
 from django.http import HttpResponse
 from django.template import loader
+from django.shortcuts import render
 
-from django.http import HttpResponse
-from django.template import loader
-from .models import Adm
+from .models import Texto
+from .models import Anuncio
+from .models import Tirinha
 
 def core(request):
-  myadms = Adm.objects.all().values()
-  template = loader.get_template('all_adms.html')
+  mytexts = Texto.objects.select_related('autor').all()
+  myads = Anuncio.objects.select_related('autor').all()
+  mycomics = Tirinha.objects.select_related('autor').all()
+
   context = {
-    'myadms': myadms,
+    'mytexts': mytexts,
+    'myads': myads,
+    'mycomics': mycomics
   }
-  return HttpResponse(template.render(context, request))
+  return render(request, 'jornal.html', context)
+

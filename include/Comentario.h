@@ -1,5 +1,5 @@
-#ifndef COMENTARIO_HPP
-#define COMENTARIO_HPP
+#ifndef COMENTARIO_H
+#define COMENTARIO_H
 
 #include "../include/Leitor.h"
 #include "../include/Artigo.h"
@@ -10,21 +10,20 @@ class Comentario {
     private: 
     int _id;
     std::string _texto;
-    Leitor* _autor_do_comentario;
-    Artigo* _artigo_comentado;
+    int _id_autor;
+    int _id_artigo;
     static int _numero_de_comentarios;
 
     public:
-    Comentario(std::string texto, Leitor* autor_do_comentario, Artigo* artigo_comentado);
+    Comentario(std::string texto, int id_autor, int id_artigo);
     ~Comentario();
 
     int get_id();
     std::string get_texto();
-    Leitor get_autor_do_comentario();
-    Artigo get_artigo_comentado();
+    int get_id_autor();
+    int get_id_artigo();
 
-    void set_texto(std::string texto);
-    void set_autor_do_comentario(Leitor* autor_do_comentario);
-    void set_artigo_comentado(Artigo* artigo_comentado);
+    static int get_ultimo_id();
+    void salvar_no_banco();
 };
 #endif

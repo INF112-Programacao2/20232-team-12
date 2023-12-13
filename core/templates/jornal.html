@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>A Universidade</title>
+  <link rel="stylesheet" href="{% static 'reset.css' %}">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <h1>A Universidade</h1>
+
+  <hr>
+  <div class="header">
+    <p>Sua dose diária de ciência</p>
+  </div>
+  <hr>
+
+  <div class="conteudo">
+    <ul>
+      {% for text in mytexts %}
+      <li id="titulo"> {{ text.titulo }} </li>
+      <li id="autor">{{ text.autor.nome }}</li>
+      <li id="email">{{ text.autor.email }}</li>
+      <li id="resumo"> {{ text.resumo }} </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="ads">
+    <div class="conteudo">
+      <ul>
+        {% for ad in myads %}
+        <li id="titulo_ads"> {{ ad.titulo }} </li>
+        <li>
+          <img id="logo" src="{{ ad.logo }}" alt="logo">
+        </li>
+        <li id="texto"> {{ ad.texto }} </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="conteudo_comics">
+    <ul>
+      {% for comic in mycomics %}
+      <li id="titulo_comic"> {{ comic.titulo }} </li>
+      <li>
+        <img id="imagem" src="{{ comic.imagem }}" alt="logo">
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</body>
+
+</html>

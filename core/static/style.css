@@ -1,0 +1,132 @@
+:root {
+    --font: 'EB Garamond', serif;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--font);
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+    margin: 18px 0;
+}
+
+hr {
+    background-color: black;
+    height: 1.5px;
+    border: 0;
+    margin: 15px 0px;
+}
+
+p {
+    font-family: var(--font);
+    font-size: 18px;
+    color: black;
+    font-weight: 900;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo {
+    padding: 10px 20px;
+    margin: 5px 90px;
+    background-color: transparent;  
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+}
+.ads {
+    text-align: center;
+    margin: 60px auto;
+    width: 85%;
+    background-color: transparent;
+    border: 2px solid #000;
+}
+
+#titulo {
+    font-family: var(--font);
+    font-size: 38px;
+    color: black;
+    font-weight: 600;
+    margin: 12px 0px;
+    text-align: left;
+}
+
+#autor {
+    font-family: var(--font);
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#email {
+    font-family: var(--font);
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-align: left;
+    text-decoration: underline;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+#resumo {
+    font-family: var(--font);
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    margin: auto;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 5px 0px 10px 0px;
+}
+
+#titulo_ads {
+    font-family: var(--font);
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#logo {
+    height: 100px;
+    margin: 15px 0px; 
+}
+
+#texto {
+    font-family: var(--font);
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0px 0px 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#titulo_comic{
+    font-family: var(--font);
+    font-size: 26px;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    margin: 15px 0px;
+}
+
+#imagem {
+    margin-bottom: 40px;
+}

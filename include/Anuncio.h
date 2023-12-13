@@ -1,5 +1,5 @@
-#ifndef ANUNCIO_HPP
-#define ANUNCIO_HPP
+#ifndef ANUNCIO_H
+#define ANUNCIO_H
 
 #include "../include/Artigo.h"
 
@@ -11,7 +11,7 @@ class Anuncio : public Artigo {
     std::string _logo;
 
     public:
-    Anuncio(std::string titulo, Autor *autor, int data, std::string link, std::string texto, std::string logo);
+    Anuncio(std::string titulo, Autor autor, std::string data, std::string link, std::string texto, std::string logo);
     ~Anuncio();
 
     std::string get_texto();
@@ -19,5 +19,7 @@ class Anuncio : public Artigo {
 
     void set_texto(std::string texto);
     void set_logo(std::string logo);
+
+    virtual void salvar_no_banco() override; 
 };
 #endif

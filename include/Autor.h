@@ -1,5 +1,5 @@
-#ifndef AUTOR_HPP
-#define AUTOR_HPP
+#ifndef AUTOR_H
+#define AUTOR_H
 
 #include "../include/Usuario.h"
 
@@ -21,5 +21,6 @@ class Autor : public Usuario {
     void set_formacao(std::string formacao);
     void set_area(std::string area);
 
+    virtual void salvar_no_banco() override;
 };
 #endif

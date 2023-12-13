@@ -1,7 +1,9 @@
-#ifndef USUARIO_HPP
-#define USUARIO_HPP
+#ifndef USUARIO_H
+#define USUARIO_H
 
 #include <iostream>
+#include <vector>
+#include <sqlite3.h>
 
 class Usuario {
     protected: 
@@ -21,6 +23,9 @@ class Usuario {
     void set_nome(std::string nome);
     void set_email(std::string email);
 
-    virtual void salvar_no_banco_de_dados();
+    static bool validar_data(std::string a);
+
+    static int get_ultimo_id();
+    virtual void salvar_no_banco() = 0;
 };
 #endif
